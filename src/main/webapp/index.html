@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Inicio tienda</title>
+</head>
+<body>
+	<h1>Bienvenido a la tienda de pauli</h1>
+	<br />
+	<br />
+	<form
+		action="ServidorPeticiones?parametroOperacion=buscarClienteDocumento"
+		method="post">
+		<label>Ingrese su documento: </label> <input name="documentoCliente">
+		<button>Buscar cédula</button>
+	</form>
+	<br />
+	<br />
+	<form
+		action="ServidorPeticiones?parametroOperacion=buscarProductoReferencia"
+		method="post">
+		<label>Ingrese la referencia del producto deseado: </label> <input
+			name="referencia">
+		<button>Buscar producto</button>
+	</form>
+	<p>
+		<img
+			src="https://tunegociobonito.com/wp-content/uploads/2020/10/decorar-tienda-abarrotes-2.jpg.webp"
+			width="250" height="250"> Abarrotes, mecato, licor y mucho mas
+	</p>
+	<br />
+	<form action="ServidorPeticiones?parametroOperacion=buscarProveedoresNit"
+		method="post">
+		<label>Ingrese el nit del proveedor: </label> <input
+			name="nit">
+		<button>Buscar proveedores</button>
+	</form>
+	<h2>Productos disponibles</h2>
+	<table border style="text-align: center;">
+		<tr>
+			<td>Referencia</td>
+			<td>Nombre</td>
+			<td>Precio</td>
+			<td>Stok</td>
+		</tr>
+		<tr>
+			<td>10304050</td>
+			<td>Arroz Diana</td>
+			<td>2780</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>10304099</td>
+			<td>Chocoramo</td>
+			<td>8300</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>10304333</td>
+			<td>Leche</td>
+			<td>3.000</td>
+			<td>11</td>
+		</tr>
+		<tr>
+			<td>10304088</td>
+			<td>lentejas</td>
+			<td>275</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>10304095</td>
+			<td>browni</td>
+			<td>10400</td>
+			<td>9</td>
+		</tr>
+		<tr>
+			<td>10304338</td>
+			<td>Quesito</td>
+			<td>3500</td>
+			<td>4</td>
+		</tr>
+	</table>
+
+
+	<a href=""></a>
+</body>
+</html>
